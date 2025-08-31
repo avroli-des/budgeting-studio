@@ -9,21 +9,26 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@heroicons/react": "^2.2.0",
+    "chart.js": "^4.4.3",
+    "chartjs-adapter-date-fns": "^3.0.0",
+    "date-fns": "^4.1.0",
+    "firebase": "^12.2.1",
     "react": "^19.1.1",
+    "react-chartjs-2": "^5.2.0",
     "react-dom": "^19.1.1",
     "react-router-dom": "^7.7.1",
-    "uuid": "^11.1.0",
-    "chart.js": "^4.4.3",
-    "react-chartjs-2": "^5.2.0",
-    "chartjs-adapter-date-fns": "^3.0.0",
-    "@heroicons/react": "^2.2.0",
-    "date-fns": "^4.1.0",
     "use-client": "^1.2.0",
-    "firebase": "^12.2.1"
+    "uuid": "^11.1.0"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
+    "esbuild": "^0.25.9",
     "typescript": "~5.8.2",
     "vite": "^6.2.0"
   }
+  "scripts": {
+  "build": "esbuild index.tsx --bundle --outfile=public/app.js --loader:.tsx=tsx --loader:.ts=ts",
+  "start": "esbuild index.tsx --bundle --outfile=public/app.js --loader:.tsx=tsx --loader:.ts=ts --watch --serve=3000"
+}
 }
