@@ -82,14 +82,14 @@ const DateRangeFilter: React.FC<DateRangeFilterProps> = ({ value, onChange }) =>
             type="date"
             value={toInputFormat(value.startDate)}
             onChange={(e) => handleDateChange(e, 'start')}
-            className="px-3 py-2 rounded-md border-slate-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm bg-white text-slate-900"
+            className="rounded-md border-slate-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm bg-white text-slate-900"
         />
         <span className="text-slate-500">-</span>
          <input
             type="date"
             value={toInputFormat(value.endDate)}
             onChange={(e) => handleDateChange(e, 'end')}
-            className="px-3 py-2 rounded-md border-slate-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm bg-white text-slate-900"
+            className="rounded-md border-slate-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm bg-white text-slate-900"
         />
       </div>
     </div>

@@ -1,3 +1,4 @@
+
 import React, { useMemo, useState, useCallback } from 'react';
 import {
   Chart as ChartJS,
@@ -599,7 +600,7 @@ const ReportsPage: React.FC<ReportsPageProps> = ({ categoryGroups, transactions,
                 <select
                   value={selectedGroupId || ''}
                   onChange={(e) => setSelectedGroupId(e.target.value)}
-                  className="block w-full sm:max-w-xs p-2 border-slate-300 rounded-md shadow-sm sm:text-sm focus:ring-blue-500 focus:border-blue-500 bg-white text-slate-900"
+                  className="block w-full sm:max-w-xs border-slate-300 rounded-md shadow-sm sm:text-sm focus:ring-blue-500 focus:border-blue-500 bg-white text-slate-900"
                 >
                   {categoryGroups.map(g => (
                       <option key={g.id} value={g.id}>{g.name}</option>

@@ -202,13 +202,13 @@ const AddTransactionModal: React.FC<AddTransactionModalProps> = ({
                     <>
                     <div>
                         <label htmlFor="fromAccount" className="block text-sm font-medium text-slate-700">З рахунку</label>
-                        <select id="fromAccount" value={accountId} onChange={e => setAccountId(e.target.value)} className="mt-1 block w-full rounded-md border-slate-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm bg-white text-slate-900 px-3 py-2">
+                        <select id="fromAccount" value={accountId} onChange={e => setAccountId(e.target.value)} className="mt-1 block w-full rounded-md border-slate-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm bg-white text-slate-900">
                             {accounts.map(acc => <option key={acc.id} value={acc.id}>{acc.name}</option>)}
                         </select>
                     </div>
                     <div>
                         <label htmlFor="toAccount" className="block text-sm font-medium text-slate-700">На рахунок</label>
-                        <select id="toAccount" value={transferToAccountId} onChange={e => setTransferToAccountId(e.target.value)} className="mt-1 block w-full rounded-md border-slate-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm bg-white text-slate-900 px-3 py-2">
+                        <select id="toAccount" value={transferToAccountId} onChange={e => setTransferToAccountId(e.target.value)} className="mt-1 block w-full rounded-md border-slate-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm bg-white text-slate-900">
                             <option value="" disabled>Оберіть рахунок</option>
                             {accounts.filter(a => a.id !== accountId).map(acc => <option key={acc.id} value={acc.id}>{acc.name}</option>)}
                         </select>
@@ -308,7 +308,7 @@ const AddTransactionModal: React.FC<AddTransactionModalProps> = ({
                 <div>
                     <label className="block text-sm font-medium text-slate-700">Дата</label>
                     <div className="relative mt-1" ref={calendarContainerRef}>
-                    <button type="button" onClick={() => setIsCalendarOpen(!isCalendarOpen)} className="relative w-full cursor-pointer rounded-md border border-slate-300 bg-white px-3 py-2 text-left shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 sm:text-sm">
+                    <button type="button" onClick={() => setIsCalendarOpen(!isCalendarOpen)} className="relative w-full cursor-pointer rounded-md border border-slate-300 bg-white px-3 text-left shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 sm:text-sm form-control-height">
                         <span className="block truncate">{toDisplayFormat(date)}</span>
                         <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2"><CalendarIcon className="h-5 w-5 text-gray-400" aria-hidden="true" /></span>
                     </button>

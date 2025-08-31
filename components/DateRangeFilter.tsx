@@ -167,7 +167,7 @@ const DateRangeFilter: React.FC<DateRangeFilterProps> = ({ value, onChange }) =>
                <button
                   type="button"
                   onClick={() => setPickerOpen(pickerOpen === 'start' ? null : 'start')}
-                  className="relative w-36 cursor-pointer rounded-md border border-slate-300 bg-white pl-3 pr-8 py-2 text-left shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 sm:text-sm"
+                  className="relative w-36 cursor-pointer rounded-md border border-slate-300 bg-white pl-3 pr-8 text-left shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 sm:text-sm form-control-height"
                 >
                   <span className="block truncate">{toButtonFormat(value.startDate)}</span>
                   <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
@@ -187,7 +187,7 @@ const DateRangeFilter: React.FC<DateRangeFilterProps> = ({ value, onChange }) =>
                <button
                   type="button"
                   onClick={() => setPickerOpen(pickerOpen === 'end' ? null : 'end')}
-                  className="relative w-36 cursor-pointer rounded-md border border-slate-300 bg-white pl-3 pr-8 py-2 text-left shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 sm:text-sm"
+                  className="relative w-36 cursor-pointer rounded-md border border-slate-300 bg-white pl-3 pr-8 text-left shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 sm:text-sm form-control-height"
                 >
                   <span className="block truncate">{toButtonFormat(value.endDate)}</span>
                   <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">

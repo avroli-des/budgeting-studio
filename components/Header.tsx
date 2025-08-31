@@ -160,7 +160,7 @@ const Header: React.FC<HeaderProps> = ({ appName, onAppNameChange, onOpenImportM
                 onChange={(e) => setTempName(e.target.value)}
                 onBlur={handleSave}
                 onKeyDown={handleKeyDown}
-                className="text-lg sm:text-xl font-bold text-slate-800 ml-3 bg-white border border-blue-500 rounded-md px-2 py-1.5 outline-none truncate"
+                className="text-lg sm:text-xl font-bold text-slate-800 ml-3 bg-white border border-blue-500 rounded-md outline-none truncate"
                 disabled={!user}
               />
             ) : (
