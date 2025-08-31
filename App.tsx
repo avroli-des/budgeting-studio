@@ -37,7 +37,6 @@ const defaultCurrencySettings: CurrencySettings = {
 
 const hydrateAppData = (data: Partial<AppData>): AppData => {
     const fullData = {
-        appName: 'Мій Поточний Бюджет',
         appName: 'Поточний бюдет',
         categoryGroups: [],
         transactions: [],
