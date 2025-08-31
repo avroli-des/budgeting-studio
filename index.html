@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Мій Поточний Бюджет</title>
+    <title>Поточний бюдет</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -159,9 +160,12 @@
   }
 }
 </script>
+<!-- Add Babel Standalone for in-browser transpilation of JSX/TSX -->
+<script src="https://unpkg.com/@babel/standalone@7.24.9/babel.min.js"></script>
 </head>
   <body class="bg-slate-50">
     <div id="root"></div>
-    <script type="module" src="./index.tsx"></script>
+    <!-- Changed script type to "text/babel" and added data-type="module" to enable transpilation -->
+    <script type="text/babel" data-type="module" src="./index.tsx"></script>
   </body>
 </html>

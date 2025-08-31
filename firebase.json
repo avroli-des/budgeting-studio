@@ -10,8 +10,12 @@
       {
         "source": "**",
         "destination": "/index.html"
+        "destination": "./index.html"
       }
     ]
   }
+<<<<<<< HEAD
 }
+=======
+>>>>>>> 69759c9284c0775ef4ddde5ea98ab2ea56e52626
 }
